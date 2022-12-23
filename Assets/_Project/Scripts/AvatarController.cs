@@ -1,10 +1,10 @@
 using UnityEngine;
 using MenteBacata.ScivoloCharacterController;
-//using MenteBacata.ScivoloCharacterControllerDemo;
 using HeroicArcade.CC.Demo;
 
 namespace HeroicArcade.CC.Core
 {
+    [RequireComponent(typeof(Animator))]
     public class AvatarController : MonoBehaviour
     {
         public Character Character { get; private set; }
@@ -13,13 +13,13 @@ namespace HeroicArcade.CC.Core
 
         public float jumpSpeed = 8f;
 
-        public float rotationSpeed = 720f;
+        //public float rotationSpeed = 720f;
 
-        public float gravity = -25f;
+        //public float gravity = -25f;
 
-        public CharacterMover mover;
+        //public CharacterMover mover;
 
-        public GroundDetector groundDetector;
+        //public GroundDetector groundDetector;
 
         public MeshRenderer groundedIndicator;
 
@@ -52,7 +52,7 @@ namespace HeroicArcade.CC.Core
         private void Start()
         {
             cameraTransform = Camera.main.transform;
-            mover.canClimbSteepSlope = true;
+            Character.Mover.canClimbSteepSlope = true;
         }
 
         private void Update()
@@ -60,7 +60,11 @@ namespace HeroicArcade.CC.Core
             float deltaTime = Time.deltaTime;
             Vector3 movementInput = GetMovementInput();
 
-            Vector3 velocity = moveSpeed * movementInput;
+            Character.velocityXZ += Character.MoveAcceleration * deltaTime;
+            if (Character.velocityXZ > Character.CurrentMaxMoveSpeed)
+                Character.velocityXZ = Character.CurrentMaxMoveSpeed;
+
+            Character.velocity = Character.velocityXZ * movementInput;
 
             bool groundDetected = DetectGroundAndCheckIfGrounded(out bool isGrounded, out GroundInfo groundInfo);
 
@@ -77,7 +81,7 @@ namespace HeroicArcade.CC.Core
 
             if (isGrounded)
             {
-                mover.isInWalkMode = true;
+                Character.Mover.isInWalkMode = true;
                 verticalSpeed = 0f;
 
                 if (groundDetected)
@@ -85,20 +89,43 @@ namespace HeroicArcade.CC.Core
             }
             else
             {
-                mover.isInWalkMode = false;
+                Character.Mover.isInWalkMode = false;
 
                 BounceDownIfTouchedCeiling();
 
-                verticalSpeed += gravity * deltaTime;
+                verticalSpeed += Character.Gravity * deltaTime;
 
                 if (verticalSpeed < minVerticalSpeed)
                     verticalSpeed = minVerticalSpeed;
 
-                velocity += verticalSpeed * transform.up;
+                Character.velocity += verticalSpeed * transform.up;
             }
 
-            RotateTowards(velocity);
-            mover.Move(velocity * deltaTime, moveContacts, out contactCount);
+            if (isGrounded)
+            {
+                if (movementInput.sqrMagnitude < 1E-06f)
+                {
+                    Character.velocityXZ = 0f;
+                    //Character.Animator.SetBool("IsSprintPressed", false);
+                }
+
+                Character.Animator.SetFloat("MoveSpeed",
+                    new Vector3(Character.velocity.x, 0, Character.velocity.z).magnitude / Character.CurrentMaxMoveSpeed);
+
+                if (Character.velocityXZ >= 1E-06f)
+                {
+                    //Character.Animator.SetBool("IsSprintPressed", Character.InputController.IsSprintPressed);
+                }
+
+                Character.CurrentMaxMoveSpeed = Character.CurrentMaxWalkSpeed;
+            }
+
+            RotateTowards(Character.velocity);
+            Character.Mover.Move(Character.velocity* deltaTime, moveContacts, out contactCount);
+
+            Character.CurrentMaxMoveSpeed = 3;
+            Character.Animator.SetFloat("MoveSpeed",
+                new Vector3(Character.velocity.x, 0, Character.velocity.z).magnitude / Character.CurrentMaxMoveSpeed);
         }
 
         private void LateUpdate()
@@ -127,7 +154,7 @@ namespace HeroicArcade.CC.Core
 
         private bool DetectGroundAndCheckIfGrounded(out bool isGrounded, out GroundInfo groundInfo)
         {
-            bool groundDetected = groundDetector.DetectGround(out groundInfo);
+            bool groundDetected = Character.GroundDetector.DetectGround(out groundInfo);
 
             if (groundDetected)
             {
@@ -155,7 +182,7 @@ namespace HeroicArcade.CC.Core
                 return;
 
             Quaternion targetRotation = Quaternion.LookRotation(flatDirection, transform.up);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, Character.TurnSpeed * Time.deltaTime);
         }
 
         private void ApplyPlatformMovement(MovingPlatform movingPlatform)

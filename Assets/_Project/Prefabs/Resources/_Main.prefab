@@ -1324,6 +1324,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1155667959}
   m_SourcePrefab: {fileID: 100100000, guid: a5674d01884853d4e8f2386a171e14d9, type: 3}
+--- !u!95 &358614054 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: a5674d01884853d4e8f2386a171e14d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 368111942}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &368145920 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100166, guid: a5674d01884853d4e8f2386a171e14d9,
@@ -1356,8 +1362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInWalkMode: 1
-  maxFloorAngle: 45
-  maxStepHeight: 0.3
+  maxFloorAngle: 50
+  maxStepHeight: 0.45
   canClimbSteepSlope: 1
 --- !u!114 &304443671
 MonoBehaviour:
@@ -1372,7 +1378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalOffset: 0
-  height: 1.7
+  height: 1.65
   radius: 0.4
   contactOffset: 0.01
   prioritizedOverlap:
@@ -1390,7 +1396,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3104c201593204db772f6eae727755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentMaxMoveSpeed: 0
+  velocity: {x: 0, y: 0, z: 0}
+  velocityXZ: 0
   inputController: {fileID: 1323056940}
+  animator: {fileID: 358614054}
+  maxWalkSpeed: 3
+  gravity: -20
+  turnSpeed: 720
+  moveAcceleration: 20
+  mover: {fileID: 304443670}
+  groundDetector: {fileID: 304443669}
 --- !u!114 &1692709316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1405,10 +1421,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpSpeed: 8
-  rotationSpeed: 720
-  gravity: -25
-  mover: {fileID: 304443670}
-  groundDetector: {fileID: 304443669}
   groundedIndicator: {fileID: 160249988}
 --- !u!4 &368503392 stripped
 Transform:
