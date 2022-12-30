@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 520203174}
   - component: {fileID: 520203173}
   - component: {fileID: 1038857947}
+  - component: {fileID: 536501370}
   m_Layer: 0
   m_Name: Follow Camera
   m_TagString: Untagged
@@ -178,7 +179,7 @@ MonoBehaviour:
       m_LegacyVelocityFilterStrength: -1
   m_YAxisRecentering:
     m_enabled: 1
-    m_WaitTime: 6
+    m_WaitTime: 1
     m_RecenteringTime: 2
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
@@ -270,6 +271,20 @@ MonoBehaviour:
   m_Damping: 0.1
   m_DampingWhenOccluded: 0.1
   m_OptimalTargetDistance: 0
+--- !u!114 &536501370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520203172}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2374dbbdea383c45b4f28f60cb9e0ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recenter: 0
+  recenterTime: 2
 --- !u!1 &843335598
 GameObject:
   m_ObjectHideFlags: 3
@@ -507,6 +522,21 @@ MonoBehaviour:
       - m_Target: {fileID: 1692709316}
         m_TargetAssemblyTypeName: HeroicArcade.CC.Core.AvatarController, Runtime
         m_MethodName: OnMoveInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  cameraRecenterXEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1692709316}
+        m_TargetAssemblyTypeName: HeroicArcade.CC.Core.AvatarController, Runtime
+        m_MethodName: OnCameraRecenterX
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1463,6 +1493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5212f2c9e6267947a30a83d40abbcb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cinemachineFreeLook: {fileID: 520203174}
+  simpleFollowRecenterX: {fileID: 536501370}
   moveSpeed: 5
   jumpSpeed: 8
   groundedIndicator: {fileID: 160249988}

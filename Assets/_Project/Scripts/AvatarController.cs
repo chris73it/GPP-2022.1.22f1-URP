@@ -1,6 +1,8 @@
 using UnityEngine;
 using MenteBacata.ScivoloCharacterController;
 using HeroicArcade.CC.Demo;
+using Cinemachine;
+using System.Collections;
 
 namespace HeroicArcade.CC.Core
 {
@@ -8,6 +10,8 @@ namespace HeroicArcade.CC.Core
     public class AvatarController : MonoBehaviour
     {
         public Character Character { get; private set; }
+        [SerializeField] CinemachineFreeLook cinemachineFreeLook;     // Recenter X (World Space)
+        [SerializeField] SimpleFollowRecenterX simpleFollowRecenterX; // Recenter X (Simple Follow With World Up)
 
         public float moveSpeed = 5f;
 
@@ -47,6 +51,17 @@ namespace HeroicArcade.CC.Core
         private void Awake()
         {
             Character = GetComponent<Character>();
+            if (cinemachineFreeLook.m_BindingMode == CinemachineTransposer.BindingMode.SimpleFollowWithWorldUp)
+            {
+                if (simpleFollowRecenterX == null)
+                {
+                    Debug.LogError("Unable to OnCameraRecenterX() because CinemachineTransposer.BindingMode is SimpleFollowWithWorldUp, but SimpleFollowRecenterX component is null");
+                }
+                else
+                {
+                    simpleFollowRecenterX.enabled = true;
+                }
+            }
         }
 
         private void Start()
@@ -121,7 +136,7 @@ namespace HeroicArcade.CC.Core
             }
 
             RotateTowards(Character.velocity);
-            Character.Mover.Move(Character.velocity* deltaTime, moveContacts, out contactCount);
+            Character.Mover.Move(Character.velocity * deltaTime, moveContacts, out contactCount);
 
             Character.CurrentMaxMoveSpeed = 3;
             Character.Animator.SetFloat("MoveSpeed",
@@ -227,5 +242,41 @@ namespace HeroicArcade.CC.Core
             currentMovement.x = moveInput.x;
             currentMovement.z = moveInput.y;
         }
-    }
-}
+
+        IEnumerator CameraRecenterX(float duration)
+        {
+            yield return new WaitForSeconds(duration);
+            cinemachineFreeLook.m_RecenterToTargetHeading.m_RecenteringTime = 0;
+            cinemachineFreeLook.m_RecenterToTargetHeading.m_enabled = false;
+        }
+
+        public void OnCameraRecenterX(bool isCameraRecenterXPressed)
+        {
+            switch (cinemachineFreeLook.m_BindingMode)
+            {
+                case CinemachineTransposer.BindingMode.SimpleFollowWithWorldUp:
+                    if (isCameraRecenterXPressed)
+                        simpleFollowRecenterX.recenter = true;
+                    break;
+                case CinemachineTransposer.BindingMode.WorldSpace:
+                    if (cinemachineFreeLook.m_RecenterToTargetHeading.m_enabled)
+                    {
+                        if (!isCameraRecenterXPressed)
+                        {
+                            cinemachineFreeLook.m_RecenterToTargetHeading.m_RecenteringTime = 0;
+                            cinemachineFreeLook.m_RecenterToTargetHeading.m_enabled = false;
+                        }
+                    }
+                    else if (isCameraRecenterXPressed)
+                    {
+                        const float duration = 0.01f;
+                        cinemachineFreeLook.m_RecenterToTargetHeading.m_enabled = isCameraRecenterXPressed;
+                        cinemachineFreeLook.m_RecenterToTargetHeading.m_RecenteringTime = duration;
+                        cinemachineFreeLook.m_RecenterToTargetHeading.RecenterNow();
+                        StartCoroutine("CameraRecenterX", 3 * duration); //A very long period
+                    }
+                    break;
+            }
+        }
+    } // End of AvatarController class
+} // End of HeroicArcade.CC.Core namespace
