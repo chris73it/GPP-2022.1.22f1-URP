@@ -8,7 +8,16 @@ namespace HeroicArcade.CC.Core
         [HideInInspector] public float CurrentMaxMoveSpeed;
         [HideInInspector] public Vector3 velocity = Vector3.zero;
         [HideInInspector] public float velocityXZ = 0f;
+        [HideInInspector] public MoveContact[] moveContacts = CharacterMover.NewMoveContactArray;
+        [HideInInspector] public int contactCount;
 
+        public enum CameraStyle
+        {
+            Adventure,
+            Combat,
+            EricWei
+        }
+        
         [SerializeField] InputController inputController;
         public InputController InputController { get => inputController; }
 
@@ -16,6 +25,8 @@ namespace HeroicArcade.CC.Core
         public Animator Animator { get => animator; }
 
         [Header("Character Parameters")]
+        [SerializeField] CameraStyle camStyle;
+        public CameraStyle CamStyle { get => camStyle; set => camStyle = value; }
         [SerializeField] float maxWalkSpeed; //6
         public float CurrentMaxWalkSpeed { get => maxWalkSpeed; set => maxWalkSpeed = value; }
         [SerializeField] float gravity; //-20
