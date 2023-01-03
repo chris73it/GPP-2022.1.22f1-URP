@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0fbecdd3462b07840a6e49f543d85b73
+guid: e3cb76432a13e7c48ace22c67ee640a4
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable:
@@ -80,256 +80,256 @@ ModelImporter:
     second: Ellen_Left_Hand
   - first:
       1: 100050
-    second: Ellen_Left_Hand_Attach
-  - first:
-      1: 100052
     second: Ellen_Left_IndexDistal
   - first:
-      1: 100054
+      1: 100052
     second: Ellen_Left_IndexEnd
   - first:
-      1: 100056
+      1: 100054
     second: Ellen_Left_IndexIntermediate
   - first:
-      1: 100058
+      1: 100056
     second: Ellen_Left_IndexProximal
   - first:
-      1: 100060
+      1: 100058
     second: Ellen_Left_LowerEyelid
   - first:
-      1: 100062
+      1: 100060
     second: Ellen_Left_LowerLeg
   - first:
-      1: 100064
+      1: 100062
     second: Ellen_Left_LowerMouth
   - first:
-      1: 100066
+      1: 100064
     second: Ellen_Left_MiddleDistal
   - first:
-      1: 100068
+      1: 100066
     second: Ellen_Left_MiddleEnd
   - first:
-      1: 100070
+      1: 100068
     second: Ellen_Left_MiddleIntermediate
   - first:
-      1: 100072
+      1: 100070
     second: Ellen_Left_MiddleProximal
   - first:
-      1: 100074
+      1: 100072
     second: Ellen_Left_Mouth
   - first:
-      1: 100076
+      1: 100074
     second: Ellen_Left_Nostril
   - first:
-      1: 100078
+      1: 100076
     second: Ellen_Left_PinkyDistal
   - first:
-      1: 100080
+      1: 100078
     second: Ellen_Left_PinkyEnd
   - first:
-      1: 100082
+      1: 100080
     second: Ellen_Left_PinkyIntermediate
   - first:
-      1: 100084
+      1: 100082
     second: Ellen_Left_PinkyProximal
   - first:
-      1: 100086
+      1: 100084
     second: Ellen_Left_RingDistal
   - first:
-      1: 100088
+      1: 100086
     second: Ellen_Left_RingEnd
   - first:
-      1: 100090
+      1: 100088
     second: Ellen_Left_RingIntermediate
   - first:
-      1: 100092
+      1: 100090
     second: Ellen_Left_RingProximal
   - first:
-      1: 100094
+      1: 100092
     second: Ellen_Left_Shoulder
   - first:
-      1: 100096
+      1: 100094
     second: Ellen_Left_ThumbDistal
   - first:
-      1: 100098
+      1: 100096
     second: Ellen_Left_ThumbEnd
   - first:
-      1: 100100
+      1: 100098
     second: Ellen_Left_ThumbIntermediate
   - first:
-      1: 100102
+      1: 100100
     second: Ellen_Left_ThumbProximal
   - first:
-      1: 100104
+      1: 100102
     second: Ellen_Left_ToeEnd
   - first:
-      1: 100106
+      1: 100104
     second: Ellen_Left_Toes
   - first:
-      1: 100108
+      1: 100106
     second: Ellen_Left_UpperArm
   - first:
-      1: 100110
+      1: 100108
     second: Ellen_Left_UpperEyelid
   - first:
-      1: 100112
+      1: 100110
     second: Ellen_Left_UpperLeg
   - first:
-      1: 100114
+      1: 100112
     second: Ellen_Left_UpperMouth
   - first:
-      1: 100116
+      1: 100114
     second: Ellen_LowerMouth
   - first:
-      1: 100118
+      1: 100116
     second: Ellen_Neck
   - first:
-      1: 100120
+      1: 100118
     second: Ellen_Right_Arm
   - first:
-      1: 100122
+      1: 100120
     second: Ellen_Right_Cheek
   - first:
-      1: 100124
+      1: 100122
     second: Ellen_Right_Eye
   - first:
-      1: 100126
+      1: 100124
     second: Ellen_Right_EyebrowDistal
   - first:
-      1: 100128
+      1: 100126
     second: Ellen_Right_EyebrowIntermediate
   - first:
-      1: 100130
+      1: 100128
     second: Ellen_Right_EyebrowProximal
   - first:
-      1: 100132
+      1: 100130
     second: Ellen_Right_Foot
   - first:
-      1: 100134
+      1: 100132
     second: Ellen_Right_Hand
   - first:
-      1: 100136
-    second: Ellen_Right_Hand_Attach
-  - first:
-      1: 100138
+      1: 100134
     second: Ellen_Right_IndexDistal
   - first:
-      1: 100140
+      1: 100136
     second: Ellen_Right_IndexEnd
   - first:
-      1: 100142
+      1: 100138
     second: Ellen_Right_IndexIntermediate
   - first:
-      1: 100144
+      1: 100140
     second: Ellen_Right_IndexProximal
   - first:
-      1: 100146
+      1: 100142
     second: Ellen_Right_LowerEyelid
   - first:
-      1: 100148
+      1: 100144
     second: Ellen_Right_LowerLeg
   - first:
-      1: 100150
+      1: 100146
     second: Ellen_Right_LowerMouth
   - first:
-      1: 100152
+      1: 100148
     second: Ellen_Right_MiddleDistal
   - first:
-      1: 100154
+      1: 100150
     second: Ellen_Right_MiddleEnd
   - first:
-      1: 100156
+      1: 100152
     second: Ellen_Right_MiddleIntermediate
   - first:
-      1: 100158
+      1: 100154
     second: Ellen_Right_MiddleProximal
   - first:
-      1: 100160
+      1: 100156
     second: Ellen_Right_Mouth
   - first:
-      1: 100162
+      1: 100158
     second: Ellen_Right_Nostril
   - first:
-      1: 100164
+      1: 100160
     second: Ellen_Right_PinkyDistal
   - first:
-      1: 100166
+      1: 100162
     second: Ellen_Right_PinkyEnd
   - first:
-      1: 100168
+      1: 100164
     second: Ellen_Right_PinkyIntermediate
   - first:
-      1: 100170
+      1: 100166
     second: Ellen_Right_PinkyProximal
   - first:
-      1: 100172
+      1: 100168
     second: Ellen_Right_RingDistal
   - first:
-      1: 100174
+      1: 100170
     second: Ellen_Right_RingEnd
   - first:
-      1: 100176
+      1: 100172
     second: Ellen_Right_RingIntermediate
   - first:
-      1: 100178
+      1: 100174
     second: Ellen_Right_RingProximal
   - first:
-      1: 100180
+      1: 100176
     second: Ellen_Right_Shoulder
   - first:
-      1: 100182
+      1: 100178
     second: Ellen_Right_ThumbDistal
   - first:
-      1: 100184
+      1: 100180
     second: Ellen_Right_ThumbEnd
   - first:
-      1: 100186
+      1: 100182
     second: Ellen_Right_ThumbIntermediate
   - first:
-      1: 100188
+      1: 100184
     second: Ellen_Right_ThumbProximal
   - first:
-      1: 100190
+      1: 100186
     second: Ellen_Right_ToeEnd
   - first:
-      1: 100192
+      1: 100188
     second: Ellen_Right_Toes
   - first:
-      1: 100194
+      1: 100190
     second: Ellen_Right_UpperArm
   - first:
-      1: 100196
+      1: 100192
     second: Ellen_Right_UpperEyelid
   - first:
-      1: 100198
+      1: 100194
     second: Ellen_Right_UpperLeg
   - first:
-      1: 100200
+      1: 100196
     second: Ellen_Right_UpperMouth
   - first:
-      1: 100202
+      1: 100198
     second: Ellen_Root
   - first:
-      1: 100204
+      1: 100200
     second: Ellen_Skeleton
   - first:
-      1: 100206
+      1: 100202
     second: Ellen_Spine
   - first:
-      1: 100208
+      1: 100204
     second: Ellen_TongueDistal
   - first:
-      1: 100210
+      1: 100206
     second: Ellen_TongueEnd
   - first:
-      1: 100212
+      1: 100208
     second: Ellen_TongueProximal
   - first:
-      1: 100214
+      1: 100210
     second: Ellen_UpperChest
   - first:
-      1: 100216
+      1: 100212
     second: Ellen_UpperMouth
+  - first:
+      1: 100214
+    second: Ellen_Left_Hand_Attach
+  - first:
+      1: 100216
+    second: Ellen_Right_Hand_Attach
   - first:
       4: 400000
     second: //RootNode
@@ -407,274 +407,274 @@ ModelImporter:
     second: Ellen_Left_Hand
   - first:
       4: 400050
-    second: Ellen_Left_Hand_Attach
-  - first:
-      4: 400052
     second: Ellen_Left_IndexDistal
   - first:
-      4: 400054
+      4: 400052
     second: Ellen_Left_IndexEnd
   - first:
-      4: 400056
+      4: 400054
     second: Ellen_Left_IndexIntermediate
   - first:
-      4: 400058
+      4: 400056
     second: Ellen_Left_IndexProximal
   - first:
-      4: 400060
+      4: 400058
     second: Ellen_Left_LowerEyelid
   - first:
-      4: 400062
+      4: 400060
     second: Ellen_Left_LowerLeg
   - first:
-      4: 400064
+      4: 400062
     second: Ellen_Left_LowerMouth
   - first:
-      4: 400066
+      4: 400064
     second: Ellen_Left_MiddleDistal
   - first:
-      4: 400068
+      4: 400066
     second: Ellen_Left_MiddleEnd
   - first:
-      4: 400070
+      4: 400068
     second: Ellen_Left_MiddleIntermediate
   - first:
-      4: 400072
+      4: 400070
     second: Ellen_Left_MiddleProximal
   - first:
-      4: 400074
+      4: 400072
     second: Ellen_Left_Mouth
   - first:
-      4: 400076
+      4: 400074
     second: Ellen_Left_Nostril
   - first:
-      4: 400078
+      4: 400076
     second: Ellen_Left_PinkyDistal
   - first:
-      4: 400080
+      4: 400078
     second: Ellen_Left_PinkyEnd
   - first:
-      4: 400082
+      4: 400080
     second: Ellen_Left_PinkyIntermediate
   - first:
-      4: 400084
+      4: 400082
     second: Ellen_Left_PinkyProximal
   - first:
-      4: 400086
+      4: 400084
     second: Ellen_Left_RingDistal
   - first:
-      4: 400088
+      4: 400086
     second: Ellen_Left_RingEnd
   - first:
-      4: 400090
+      4: 400088
     second: Ellen_Left_RingIntermediate
   - first:
-      4: 400092
+      4: 400090
     second: Ellen_Left_RingProximal
   - first:
-      4: 400094
+      4: 400092
     second: Ellen_Left_Shoulder
   - first:
-      4: 400096
+      4: 400094
     second: Ellen_Left_ThumbDistal
   - first:
-      4: 400098
+      4: 400096
     second: Ellen_Left_ThumbEnd
   - first:
-      4: 400100
+      4: 400098
     second: Ellen_Left_ThumbIntermediate
   - first:
-      4: 400102
+      4: 400100
     second: Ellen_Left_ThumbProximal
   - first:
-      4: 400104
+      4: 400102
     second: Ellen_Left_ToeEnd
   - first:
-      4: 400106
+      4: 400104
     second: Ellen_Left_Toes
   - first:
-      4: 400108
+      4: 400106
     second: Ellen_Left_UpperArm
   - first:
-      4: 400110
+      4: 400108
     second: Ellen_Left_UpperEyelid
   - first:
-      4: 400112
+      4: 400110
     second: Ellen_Left_UpperLeg
   - first:
-      4: 400114
+      4: 400112
     second: Ellen_Left_UpperMouth
   - first:
-      4: 400116
+      4: 400114
     second: Ellen_LowerMouth
   - first:
-      4: 400118
+      4: 400116
     second: Ellen_Neck
   - first:
-      4: 400120
+      4: 400118
     second: Ellen_Right_Arm
   - first:
-      4: 400122
+      4: 400120
     second: Ellen_Right_Cheek
   - first:
-      4: 400124
+      4: 400122
     second: Ellen_Right_Eye
   - first:
-      4: 400126
+      4: 400124
     second: Ellen_Right_EyebrowDistal
   - first:
-      4: 400128
+      4: 400126
     second: Ellen_Right_EyebrowIntermediate
   - first:
-      4: 400130
+      4: 400128
     second: Ellen_Right_EyebrowProximal
   - first:
-      4: 400132
+      4: 400130
     second: Ellen_Right_Foot
   - first:
-      4: 400134
+      4: 400132
     second: Ellen_Right_Hand
   - first:
-      4: 400136
-    second: Ellen_Right_Hand_Attach
-  - first:
-      4: 400138
+      4: 400134
     second: Ellen_Right_IndexDistal
   - first:
-      4: 400140
+      4: 400136
     second: Ellen_Right_IndexEnd
   - first:
-      4: 400142
+      4: 400138
     second: Ellen_Right_IndexIntermediate
   - first:
-      4: 400144
+      4: 400140
     second: Ellen_Right_IndexProximal
   - first:
-      4: 400146
+      4: 400142
     second: Ellen_Right_LowerEyelid
   - first:
-      4: 400148
+      4: 400144
     second: Ellen_Right_LowerLeg
   - first:
-      4: 400150
+      4: 400146
     second: Ellen_Right_LowerMouth
   - first:
-      4: 400152
+      4: 400148
     second: Ellen_Right_MiddleDistal
   - first:
-      4: 400154
+      4: 400150
     second: Ellen_Right_MiddleEnd
   - first:
-      4: 400156
+      4: 400152
     second: Ellen_Right_MiddleIntermediate
   - first:
-      4: 400158
+      4: 400154
     second: Ellen_Right_MiddleProximal
   - first:
-      4: 400160
+      4: 400156
     second: Ellen_Right_Mouth
   - first:
-      4: 400162
+      4: 400158
     second: Ellen_Right_Nostril
   - first:
-      4: 400164
+      4: 400160
     second: Ellen_Right_PinkyDistal
   - first:
-      4: 400166
+      4: 400162
     second: Ellen_Right_PinkyEnd
   - first:
-      4: 400168
+      4: 400164
     second: Ellen_Right_PinkyIntermediate
   - first:
-      4: 400170
+      4: 400166
     second: Ellen_Right_PinkyProximal
   - first:
-      4: 400172
+      4: 400168
     second: Ellen_Right_RingDistal
   - first:
-      4: 400174
+      4: 400170
     second: Ellen_Right_RingEnd
   - first:
-      4: 400176
+      4: 400172
     second: Ellen_Right_RingIntermediate
   - first:
-      4: 400178
+      4: 400174
     second: Ellen_Right_RingProximal
   - first:
-      4: 400180
+      4: 400176
     second: Ellen_Right_Shoulder
   - first:
-      4: 400182
+      4: 400178
     second: Ellen_Right_ThumbDistal
   - first:
-      4: 400184
+      4: 400180
     second: Ellen_Right_ThumbEnd
   - first:
-      4: 400186
+      4: 400182
     second: Ellen_Right_ThumbIntermediate
   - first:
-      4: 400188
+      4: 400184
     second: Ellen_Right_ThumbProximal
   - first:
-      4: 400190
+      4: 400186
     second: Ellen_Right_ToeEnd
   - first:
-      4: 400192
+      4: 400188
     second: Ellen_Right_Toes
   - first:
-      4: 400194
+      4: 400190
     second: Ellen_Right_UpperArm
   - first:
-      4: 400196
+      4: 400192
     second: Ellen_Right_UpperEyelid
   - first:
-      4: 400198
+      4: 400194
     second: Ellen_Right_UpperLeg
   - first:
-      4: 400200
+      4: 400196
     second: Ellen_Right_UpperMouth
   - first:
-      4: 400202
+      4: 400198
     second: Ellen_Root
   - first:
-      4: 400204
+      4: 400200
     second: Ellen_Skeleton
   - first:
-      4: 400206
+      4: 400202
     second: Ellen_Spine
   - first:
-      4: 400208
+      4: 400204
     second: Ellen_TongueDistal
   - first:
-      4: 400210
+      4: 400206
     second: Ellen_TongueEnd
   - first:
-      4: 400212
+      4: 400208
     second: Ellen_TongueProximal
   - first:
-      4: 400214
+      4: 400210
     second: Ellen_UpperChest
   - first:
-      4: 400216
+      4: 400212
     second: Ellen_UpperMouth
+  - first:
+      4: 400214
+    second: Ellen_Left_Hand_Attach
+  - first:
+      4: 400216
+    second: Ellen_Right_Hand_Attach
   - first:
       43: 4300000
     second: Ellen_Body
   - first:
       74: 7400000
-    second: EllenWalkForward
+    second: EllenRunForward45Left
   - first:
       74: 7400002
-    second: EllenWalkForward45Left
+    second: EllenRunForwardLeft
   - first:
       74: 7400004
-    second: EllenWalkForwardLeft
+    second: EllenRunForward
   - first:
       74: 7400006
-    second: EllenWalkForward45Right
+    second: EllenRunForward45Right
   - first:
       74: 7400008
-    second: EllenWalkForwardRight
+    second: EllenRunForwardRight
   - first:
       95: 9500000
     second: //RootNode
@@ -730,10 +730,10 @@ ModelImporter:
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar
       to improve retargeting quality.\n\t'Ellen_Spine' has translation animation
-      that will be discarded.\n\t'Ellen_Left_UpperLeg' has scale animation that will
-      be discarded.\n\t'Ellen_Left_LowerLeg' has scale animation that will be discarded.\n\t'Ellen_Right_UpperLeg'
-      has scale animation that will be discarded.\n\t'Ellen_Right_LowerLeg' has scale
-      animation that will be discarded.\n"
+      that will be discarded.\n\t'Ellen_Chest' has translation animation that will
+      be discarded.\n\t'Ellen_UpperChest' has translation animation that will be
+      discarded.\n\t'Ellen_Left_UpperLeg' has scale animation that will be discarded.\n\t'Ellen_Left_LowerLeg'
+      has scale animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -747,15 +747,15 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: EllenWalkForwardLeft
+      name: EllenRunForwardLeft
       takeName: Take 001
       internalID: 0
-      firstFrame: 0
-      lastFrame: 65
+      firstFrame: 27
+      lastFrame: 68
       wrapMode: 0
       orientationOffsetY: 90
       level: 0
-      cycleOffset: 0.24
+      cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
@@ -771,14 +771,14 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.10362695
+      - time: 0.08290155
         functionName: PlayStep
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.5829016
+      - time: 0.59585494
         functionName: PlayStep
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -1006,17 +1006,17 @@ ModelImporter:
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: EllenWalkForward45Left
+      name: EllenRunForward45Left
       takeName: Take 001
       internalID: 0
-      firstFrame: 0
-      lastFrame: 65
+      firstFrame: 27
+      lastFrame: 68
       wrapMode: 0
       orientationOffsetY: 45
       level: 0
-      cycleOffset: 0.24
+      cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
@@ -1253,17 +1253,17 @@ ModelImporter:
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: EllenWalkForward
+      name: EllenRunForward
       takeName: Take 001
       internalID: 0
-      firstFrame: 0
-      lastFrame: 65
+      firstFrame: 27
+      lastFrame: 68
       wrapMode: 0
-      orientationOffsetY: 0
+      orientationOffsetY: 22.5
       level: 0
-      cycleOffset: 0.24
+      cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
@@ -1292,7 +1292,7 @@ ModelImporter:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.19
+            time: 0.37
             value: 0
             inSlope: 0
             outSlope: 0
@@ -1301,34 +1301,7 @@ ModelImporter:
             inWeight: 0.33333334
             outWeight: 0.33333334
           - serializedVersion: 3
-            time: 0.21
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.23
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.71
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.73
+            time: 0.39
             value: 1
             inSlope: 0
             outSlope: 0
@@ -1337,7 +1310,34 @@ ModelImporter:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.75
+            time: 0.41
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.9
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.92
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.94
             value: 0
             inSlope: 0
             outSlope: 0
@@ -1579,17 +1579,17 @@ ModelImporter:
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1.8
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: EllenWalkForward45Right
+      name: EllenRunForward45Right
       takeName: Take 001
       internalID: 0
-      firstFrame: 0
-      lastFrame: 65
+      firstFrame: 27
+      lastFrame: 68
       wrapMode: 0
       orientationOffsetY: -45
       level: 0
-      cycleOffset: 0.24
+      cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
@@ -1826,17 +1826,17 @@ ModelImporter:
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: EllenWalkForwardRight
+      name: EllenRunForwardRight
       takeName: Take 001
       internalID: 0
-      firstFrame: 0
-      lastFrame: 65
+      firstFrame: 27
+      lastFrame: 68
       wrapMode: 0
       orientationOffsetY: -90
       level: 0
-      cycleOffset: 0.24
+      cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
@@ -2073,7 +2073,7 @@ ModelImporter:
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []

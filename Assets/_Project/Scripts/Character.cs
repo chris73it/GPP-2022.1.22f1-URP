@@ -27,8 +27,10 @@ namespace HeroicArcade.CC.Core
         [Header("Character Parameters")]
         [SerializeField] CameraStyle camStyle;
         public CameraStyle CamStyle { get => camStyle; set => camStyle = value; }
-        [SerializeField] float maxWalkSpeed; //6
+        [SerializeField] float maxWalkSpeed; //3
         public float CurrentMaxWalkSpeed { get => maxWalkSpeed; set => maxWalkSpeed = value; }
+        [SerializeField] float maxSprintSpeed; //6
+        public float CurrentMaxSprintSpeed { get => maxSprintSpeed; set => maxSprintSpeed = value; }
         [SerializeField] float gravity; //-20
         public float Gravity { get => gravity; }
         [SerializeField] float turnSpeed;

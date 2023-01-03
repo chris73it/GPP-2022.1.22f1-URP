@@ -66,6 +66,7 @@ namespace HeroicArcade.CC.Core
         {
             Character.Animator.SetBool("IsAimPressed", Character.InputController.IsAimPressed);
             Character.Animator.SetBool("IsShootPressed", Character.InputController.IsShootPressed);
+            Character.Animator.SetBool("IsSprintPressed", Character.InputController.IsSprintPressed);
 
             float deltaTime = Time.deltaTime;
             Vector3 movementInput = GetMovementInput();
@@ -115,7 +116,9 @@ namespace HeroicArcade.CC.Core
             RotateTowards(Character.velocity);
             Character.Mover.Move(Character.velocity * deltaTime, Character.moveContacts, out Character.contactCount);
 
-            Character.CurrentMaxMoveSpeed = 3;
+            Character.CurrentMaxMoveSpeed =
+                    Character.InputController.IsSprintPressed ? Character.CurrentMaxSprintSpeed : Character.CurrentMaxWalkSpeed;
+
             Character.Animator.SetFloat("MoveSpeed",
                     new Vector3(Character.velocity.x, 0, Character.velocity.z).magnitude / Character.CurrentMaxMoveSpeed);
         }
