@@ -80,6 +80,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""8b3cb40d-1d1b-4bab-98dd-88076a2dfbc2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -258,6 +267,39 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""action"": ""AimSwap"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""799785a7-f7bc-48c8-809c-1b240854c02b"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7b48b734-72dd-4ccd-a0e0-01f4df3f28b9"",
+                    ""path"": ""<Keyboard>/ctrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ae03b6fc-36be-44a2-8ca7-591d7c115d97"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -272,6 +314,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Gameplay_CameraRecenterX = m_Gameplay.FindAction("CameraRecenterX", throwIfNotFound: true);
         m_Gameplay_Aim = m_Gameplay.FindAction("Aim", throwIfNotFound: true);
         m_Gameplay_AimSwap = m_Gameplay.FindAction("AimSwap", throwIfNotFound: true);
+        m_Gameplay_Shoot = m_Gameplay.FindAction("Shoot", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -337,6 +380,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_CameraRecenterX;
     private readonly InputAction m_Gameplay_Aim;
     private readonly InputAction m_Gameplay_AimSwap;
+    private readonly InputAction m_Gameplay_Shoot;
     public struct GameplayActions
     {
         private @Controls m_Wrapper;
@@ -347,6 +391,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @CameraRecenterX => m_Wrapper.m_Gameplay_CameraRecenterX;
         public InputAction @Aim => m_Wrapper.m_Gameplay_Aim;
         public InputAction @AimSwap => m_Wrapper.m_Gameplay_AimSwap;
+        public InputAction @Shoot => m_Wrapper.m_Gameplay_Shoot;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -374,6 +419,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @AimSwap.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnAimSwap;
                 @AimSwap.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnAimSwap;
                 @AimSwap.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnAimSwap;
+                @Shoot.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnShoot;
+                @Shoot.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnShoot;
+                @Shoot.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnShoot;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -396,6 +444,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @AimSwap.started += instance.OnAimSwap;
                 @AimSwap.performed += instance.OnAimSwap;
                 @AimSwap.canceled += instance.OnAimSwap;
+                @Shoot.started += instance.OnShoot;
+                @Shoot.performed += instance.OnShoot;
+                @Shoot.canceled += instance.OnShoot;
             }
         }
     }
@@ -408,5 +459,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnCameraRecenterX(InputAction.CallbackContext context);
         void OnAim(InputAction.CallbackContext context);
         void OnAimSwap(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
     }
 }

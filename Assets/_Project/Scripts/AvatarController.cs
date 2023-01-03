@@ -64,6 +64,9 @@ namespace HeroicArcade.CC.Core
 
         private void Update()
         {
+            Character.Animator.SetBool("IsAimPressed", Character.InputController.IsAimPressed);
+            Character.Animator.SetBool("IsShootPressed", Character.InputController.IsShootPressed);
+
             float deltaTime = Time.deltaTime;
             Vector3 movementInput = GetMovementInput();
 
@@ -99,6 +102,14 @@ namespace HeroicArcade.CC.Core
                     verticalSpeed = minVerticalSpeed;
 
                 Character.velocity += verticalSpeed * transform.up;
+            }
+
+            if (isGrounded)
+            {
+                if (movementInput.sqrMagnitude < 1E-06f)
+                {
+                    Character.velocityXZ = 0f;
+                }
             }
 
             RotateTowards(Character.velocity);
@@ -286,7 +297,7 @@ namespace HeroicArcade.CC.Core
             {
                 aimCameraOffset = AimCameraOffset.Left;
             }
-            OnCameraAim(Character.InputController.IsAimingPressed);
+            OnCameraAim(Character.InputController.IsAimPressed);
         }
     } // End of AvatarController class
 } // End of HeroicArcade.CC.Core namespace
