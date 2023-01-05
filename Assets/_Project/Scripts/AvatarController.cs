@@ -78,10 +78,17 @@ namespace HeroicArcade.CC.Core
             Character.velocity = Character.velocityXZ * movementInput;
 
             bool groundDetected = DetectGroundAndCheckIfGrounded(out bool isGrounded, out GroundInfo groundInfo);
-
+            Character.Animator.SetBool("IsJumpPressed", !isGrounded);
             SetGroundedIndicatorColor(isGrounded);
 
             isOnMovingPlatform = false;
+
+            if (isGrounded && Character.InputController.IsJumpPressed)
+            {
+                verticalSpeed = Character.JumpSpeed;
+                nextUngroundedTime = -1f;
+                isGrounded = false;
+            }
 
             if (isGrounded)
             {

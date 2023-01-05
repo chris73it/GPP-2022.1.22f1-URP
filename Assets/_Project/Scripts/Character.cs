@@ -31,6 +31,8 @@ namespace HeroicArcade.CC.Core
         public float CurrentMaxWalkSpeed { get => maxWalkSpeed; set => maxWalkSpeed = value; }
         [SerializeField] float maxSprintSpeed; //6
         public float CurrentMaxSprintSpeed { get => maxSprintSpeed; set => maxSprintSpeed = value; }
+        [SerializeField] float jumpSpeed; //8
+        public float JumpSpeed { get => jumpSpeed; }
         [SerializeField] float gravity; //-20
         public float Gravity { get => gravity; }
         [SerializeField] float turnSpeed;
