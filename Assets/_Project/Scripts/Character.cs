@@ -43,5 +43,7 @@ namespace HeroicArcade.CC.Core
         public CharacterMover Mover { get => mover; }
         [SerializeField] GroundDetector groundDetector;
         public GroundDetector GroundDetector { get => groundDetector; }
+        [SerializeField] AutoAiming autoAiming;
+        public AutoAiming AutoAiming { get => autoAiming; }
     }
 }
